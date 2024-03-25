@@ -49,9 +49,9 @@ const students = [
 const StudentList = ({ handleShowTeacher, handleHideTeacher, filter }) => {
     const [filteredStudents, setFilteredStudents] = useState(students);
     useEffect(() => {
-        if (filter == "Web Development") {
+        if (filter == "Frontend Development") {
             setFilteredStudents(students.filter(item => item.track == 'Frontend'));
-        } else if (filter == "App Development") {
+        } else if (filter == "Backend Development") {
             setFilteredStudents(students.filter(item => item.track == 'Backend'));
         } else if (filter == "UX & UI") {
             setFilteredStudents(students.filter(item => item.track == 'UI/UX'));
