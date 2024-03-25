@@ -1,0 +1,91 @@
+.menu{
+    position: fixed;
+    top: 40%; 
+    transform: translateY(-50%);
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+    scroll-behavior: smooth;
+}
+.logo{
+    text-align: center;
+    padding: 20px;
+    color: #27374d;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+.logo-icon{
+    font-size: 1.4rem;
+}
+.menu--list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu--list .item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    color: #27374d;
+}
+.menu--list .item:hover, .active{
+    background: #27374d;
+    color: #dde6ed !important;
+}
+
+@media(max-width: 1170px){
+    .menu{
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        transform: translateY(0);
+        flex-direction: row;
+        justify-content: space-evenly;
+        row-gap: 1px;
+        padding-left: 2rem;
+        height: 10vh;
+        flex: 1;
+        border-top: 1px solid hsl(206, 31%, 95%);
+        /* background: linear-gradient(8deg, hsl(240 17% 14% / 100%) 5%, hsl(240 17% 14% / 90%) 100%); */
+        /* background: #000000; */
+        background: #dde6ed;
+        z-index: 1;
+        overflow-x: scroll;
+    }
+    .menu::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+    .menu--list{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        margin-top: 10px;
+    }
+    .menu--list .item{
+        font-size: 1rem;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+@media(max-width: 850px){
+    .menu{
+        padding-left: 15rem;
+    }
+}
+@media(max-width: 750px){
+    .menu{
+        padding-left: 20rem;
+    }
+}
