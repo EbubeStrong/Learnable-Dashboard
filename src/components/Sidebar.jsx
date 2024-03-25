@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className='menu'>
         <div className='logo'>
              <BiBookAlt className='logo-icon'/>
-             <h2>EduFlex</h2>
+             <h2>Learnable</h2>
         </div>
 
         <div className='menu--list'>
