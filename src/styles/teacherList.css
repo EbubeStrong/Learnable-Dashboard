@@ -39,7 +39,7 @@
     height: 50px;
     background: #dde6ed;
     border-radius: 50%;
-
+    border: 3px solid grey;
 }
 .list:hover{
     background: #dde6ed;
