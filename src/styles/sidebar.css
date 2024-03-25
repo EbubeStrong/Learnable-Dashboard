@@ -61,7 +61,7 @@
         /* background: #000000; */
         background: #dde6ed;
         z-index: 1;
-        overflow-x: scroll;
+        overflow: auto;
     }
     .menu::-webkit-scrollbar{
         width: 0;
