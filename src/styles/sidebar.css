@@ -64,8 +64,7 @@
         overflow: auto;
     }
     .menu::-webkit-scrollbar{
-        width: 0;
-        height: 0;
+       display: none;
     }
     .menu--list{
         display: flex;
