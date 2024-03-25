@@ -2,11 +2,11 @@ import { BiBuilding, BiLogoAndroid, BiLogoHtml5 } from 'react-icons/bi'
 
 const courses = [
     {
-        title: 'Web Development',
+        title: 'Frontend Development',
         icon: <BiLogoHtml5 />
     },
     {
-        title: 'App Development',
+        title: 'Backend Development',
         duration: '2 Hours',
         icon: <BiLogoAndroid />
     },
