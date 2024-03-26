@@ -2,9 +2,9 @@ import React from 'react'
 import ProfileHeader from './ProfileHeader';
 import '../styles/profile.css'
 import userImage from '../assets/me.jpg'
-import Image1 from '../assets/pic3.jpg';
-import Image2 from '../assets/pic1.jpg';
-import Image3 from '../assets/pic2.jpg';
+// import Image1 from '../assets/pic3.jpg';
+// import Image2 from '../assets/pic1.jpg';
+// import Image3 from '../assets/pic2.jpg';
 // import Image_1 from '../assets/me.jpg';
 import { BiBook } from 'react-icons/bi';
 
@@ -25,6 +25,21 @@ const courses = [
     duration: '2 hours',
     icon: <BiBook />
   },
+  {
+    title: 'UI & UX',
+    duration: '2 hours',
+    icon: <BiBook />
+  },
+  {
+    title: 'Node.JS',
+    duration: '2 hours',
+    icon: <BiBook />
+  },
+  {
+    title: 'MySQL',
+    duration: '2 hours',
+    icon: <BiBook />
+  },
 ]
 
 const Profile = () => {
@@ -36,7 +51,7 @@ const Profile = () => {
         <div className='user--detail'>
           <img src={userImage} alt='' />
           <h3 className='username'>Godwin Obi</h3>
-          <span className='profession'>Teacher</span>
+          <span className='profession'>Coordinator</span>
         
 
          {/* { {courses.map((course) => (
